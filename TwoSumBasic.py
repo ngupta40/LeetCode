@@ -12,6 +12,5 @@ def twoSum(self, nums, target):
 
 
 nums = [1,2,3,4,5,9]
-
 l1 = twoSum(nums,9)
 print l1
