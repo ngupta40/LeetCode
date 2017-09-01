@@ -10,6 +10,7 @@ def twoSum(self, nums, target):
                 l1.append(j)
                 return l1
 
+
 nums = [1,2,3,4,5,9]
 
 l1 = twoSum(nums,9)
