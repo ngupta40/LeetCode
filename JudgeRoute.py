@@ -10,6 +10,6 @@ def judgeCircle(moves):
         if((MoveList.count('L')- MoveList.count('R') == 0) and (MoveList.count('U') - MoveList.count('D') == 0)):
             return True
 
-moves = "LRUDLRUDLLLRRR"
+moves = "LRUDLRUDLLLRRRR"
 judegement = judgeCircle(moves)
 print judegement
