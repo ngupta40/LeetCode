@@ -34,8 +34,21 @@ class Solution(object):
             return head
         else:
             return None
+    def appendNode(self,head):
+        if(head != None):
+            n = ListNode(0)
+            n.next = None
+            n.val = head.val
+            while(head.next != None):
+                head = head.next
+                n1 = ListNode(0)
+                n1.val = head.val
+                n1.next = n
+                n = n1
 
-        head.traverse(head)
+        while(n != None):
+            print n.val
+            n = n.next
         """
         :type head: ListNode
         :rtype: ListNode
@@ -54,4 +67,5 @@ l5.next = None
 
 
 s1 =Solution()
-s1.reverseList(l1)
+#s1.reverseList(l1)
+s1.appendNode(l1)
