@@ -49,6 +49,15 @@ class Solution(object):
         while(n != None):
             print n.val
             n = n.next
+
+    def deleteNode(self,node):
+
+        n1 = ListNode
+        n1 = node.next
+        node.val = n1.val
+        node.next = n1.next
+
+        del n1
         """
         :type head: ListNode
         :rtype: ListNode
